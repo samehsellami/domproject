@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YvesRocher</title>
+    <link rel="preconnect" href="https://fonts.google.com/specimen/Kanit">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" alt="yr">
+    <link rel="stylesheet" type="text/css" href="panier.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+<header>
+    <h1>Panier</h1>
+</header>
+<div class="container">
+    <div class="items-container">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="QNA.jpg" alt="Item 1">
+                <h3>Eau de toilette</h3>
+                <span class="item-price">65 DT</span>
+                <div class="item-controls">
+                    <span class="icon-trash"><i class="fas fa-trash"></i></span>
+                    <span class="icon-plus"><i class="fas fa-plus"></i></span>
+                    <span class="icon-minus"><i class="fas fa-minus"></i></span>
+                    <span class="item-quantity">1</span>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="brume.jpg" alt="Item 2">
+                <h3>Brume cheveux & corps</h3>
+                <span class="item-price">24 DT</span>
+                <div class="item-controls">
+                    <span class="icon-trash"><i class="fas fa-trash"></i></span>
+                    <span class="icon-plus"><i class="fas fa-plus"></i></span>
+                    <span class="icon-minus"><i class="fas fa-minus"></i></span>
+                    <span class="item-quantity">1</span>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="nettoyant.jpg" alt="Item 3">
+                <h3>Gel nettoyant</h3>
+                <span class="item-price">32 DT</span>
+                <div class="item-controls">
+                    <span class="icon-trash"><i class="fas fa-trash"></i></span>
+                    <span class="icon-plus"><i class="fas fa-plus"></i></span>
+                    <span class="icon-minus"><i class="fas fa-minus"></i></span>
+                    <span class="item-quantity">1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="total-container">
+        <h2>Total:</h2>
+        <!-- Add an empty table body element -->
+        <table id="total-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="total-table-body">
+                <!-- Item rows will be dynamically added here -->
+            </tbody>
+        </table>
+    
+        <span id="total-amount" class="hide">0 DT</span>
+    </div>
+    <button id="calculate-btn">Calculate Total</button>
+    
+</div>
+<script src="panier.js"></script>
+</body>
+</html>

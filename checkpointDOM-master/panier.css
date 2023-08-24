@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+    gap : 40px;
+}
+
+.items-container {
+    width: 50%; /* Adjust the width as needed */
+    background-color: #f2f2f2;
+}
+
+.total-container {
+    width: 20%; /* Adjust the width as needed */
+    background-color: #f2f2f2;
+    padding: 20px;
+   
+}
+/* Styling for the image */
+.grid-item img {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Additional styles for icons */
+.icon-trash,
+.icon-plus,
+.icon-minus {
+    cursor: pointer;
+}
+
+.item-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-quantity {
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#total-section {
+    margin-top: 20px;
+}
+#total-amount {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#total-table {
+    width: 100%;
+    margin-top: 20px;
+    display: none; /* Hide the table by default */
+}
+#total-amount.hide {
+    display: none;
+}
+
+#total-table.show {
+    display: table; /* Show the table when the show class is applied */
+}
+
+#total-table th,
+#total-table td {
+    padding: 10px;
+}
+
+#total-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
